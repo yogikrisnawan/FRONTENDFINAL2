@@ -1,0 +1,20 @@
+git branch <namabranch>
+   Membuat branch baru
+
+git checkout <namabranch>
+   Pindah ke branch tertentu
+
+git checkout master
+   Pindah ke branch master
+
+git add .
+   Menyimpan semua file yang akan di commit
+
+git commit -m " < isi pesan anda > "
+   Membuat commit baru
+
+git push origin <namabranch>
+   Push branch tempat dimana teman - teman bekerja
+
+git pull origin master
+   Mengupdate kode project dari branch master
