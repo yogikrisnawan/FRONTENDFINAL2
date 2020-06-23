@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Home from '../components/Home'
 import Ghalib from '../components/Ghalib'
 import NotFound from '../components/404'
-import NotFound from '../components/Raditra'
+import Raditra from '../components/Raditra'
 
 export default function App() {
    return (
