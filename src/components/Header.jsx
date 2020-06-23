@@ -31,6 +31,9 @@ const Example = (props) => {
               <NavLink href="/raditra">RADITRA</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/fadil">Fadil</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/ghalib">GHALIB</NavLink>
             </NavItem>
           </Nav>

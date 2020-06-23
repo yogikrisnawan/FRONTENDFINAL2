@@ -6,6 +6,8 @@ import Home from '../components/Home'
 import Ghalib from '../components/Ghalib'
 import NotFound from '../components/404'
 import Raditra from '../components/Raditra'
+import Fadil from '../components/fadil'
+
 
 export default function App() {
    return (
@@ -15,6 +17,7 @@ export default function App() {
             <Switch>
                <Route path="/" exact component={Home}/>
                <Route path="/raditra" exact component={Raditra}/>
+               <Route path="/fadil" component={Fadil}/>
                <Route path="/ghalib" component={Ghalib}/>
                <Route component={NotFound} />
             </Switch>
