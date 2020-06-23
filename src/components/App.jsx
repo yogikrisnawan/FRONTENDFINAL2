@@ -8,6 +8,7 @@ import NotFound from '../components/404'
 import Triv from '../components/Triv'
 
 
+import Fadil from '../components/fadil'
 
 export default function App() {
    return (
@@ -16,6 +17,7 @@ export default function App() {
             <Header/>
             <Switch>
                <Route path="/" exact component={Home}/>
+               <Route path="/fadil" component={Fadil}/>
                <Route path="/ghalib" component={Ghalib}/>
                <Route path="/triv" component={Triv}/>
                <Route component={NotFound} />
