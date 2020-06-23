@@ -1,0 +1,47 @@
+git branch <namabranch>
+   Membuat branch baru
+
+git checkout <namabranch>
+   Pindah ke branch tertentu
+
+git checkout master
+   Pindah ke branch master
+
+git add .
+   Menyimpan semua file yang akan di commit
+
+git commit -m " < isi pesan anda > "
+   Membuat commit baru
+
+git push origin <namabranch>
+   Push branch tempat dimana teman - teman bekerja
+
+git pull origin master
+   Mengupdate kode project dari branch master
+
+
+
+JIKA CONFLICT PADA PACKAGE-LOCK.JSON
+
+1. Di bagian ada link (tulisan biru) commandline insturctions, klik link tersebut nanti akan muncul perintah git di bawah
+
+2. copy dan running perintah tersebut satu persatu di visual studio code. Berikut contohnya :
+   a. git fetch origin
+   b. git checkout -b triv origin/triv
+   c. git merge master
+
+3. akan muncul conflict di visual studio code
+
+4. Run Perintah (kalau ada conflic di package-lock.json) :
+   npm install --save-dev @babel/core @babel/preset-env
+
+5. Selesaikan conflict di file lain jika ada
+
+6. push setelah conflict selesai
+
+      git add .
+      git commit -m "fix conflict ..."
+
+      git checkout master
+      git merge <namabranch>
+      git push origin master
