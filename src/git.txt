@@ -36,3 +36,8 @@ JIKA CONFLICT PADA PACKAGE-LOCK.JSON
    npm install --save-dev @babel/core @babel/preset-env
 
 5. Selesaikan conflict di file lain jika ada
+
+6. push setelah conflict selesai
+      git add .
+      git commit -m "fix conflict ..."
+      git push origin master
