@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+  
+} from 'reactstrap'
+import Link from 'react-router-dom';
+
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,41 +18,32 @@ const Example = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand classname= ''href="/">MASAKNDIRI</NavbarBrand>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/">HOME</NavLink>
-            </NavItem><NavItem>
-              <NavLink href="/yogikrisnawan">YOGIKRISNAWAN</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/kunto">KUNTO</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/triv">Triv</NavLink>
             </NavItem>
             <NavItem>          
-              <NavLink href="/raditra">RADITRA</NavLink>
+              <NavLink href="/raditra">OUR CHEF</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/fadil">Fadil</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/ghalib">GHALIB</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/fadil">Fadil</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/dhimasf">DhimasF</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/kharis">kharis</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/arief">ARIEF</NavLink>
+            <NavItem>          
+              <NavLink href="/raditra">ORDERS</NavLink>
             </NavItem>
           </Nav>
+
+          <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink href="">
+              Register
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="">
+              Login
+            </NavLink>
+          </NavItem>
+        </Nav>
+          
       </Navbar>
     </div>
   );
